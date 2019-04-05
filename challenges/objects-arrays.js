@@ -84,17 +84,25 @@ Name email@example.com
 
 Log the result of your new array. */
 const contactInfo = [];
-const combineInfo = `${nameInfo} + ${emailInfo}`;
 for(i = 0; i < graduates.length; i++){
-
+  studentName = graduates[i]['first_name'];
+  studentEmail = graduates[i]['email'];
+  combineInfo = studentName + ' ' + studentEmail;
+  contactInfo.push(combineInfo);
 };
-
+contactInfo.sort();
 console.log(contactInfo);
-
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 const uni = [];
-console.log(uni);
+for( i = 0; i < graduates.length; i++){
+  containsUni = graduates[i]['university'];
+  if (containsUni.includes('Univ')){
+    uni.push(containsUni)
+  }
+}
+console.log(uni.length);
+console.log(uni)
 
 
 // ==== ADVANCED Array Methods ====
@@ -119,6 +127,7 @@ The zoo wants to display both the scientific name and the animal name in front o
 
 */
 const animalNames = [];
+
 console.log(animalNames);
 
 /* Request 2: .map()    
