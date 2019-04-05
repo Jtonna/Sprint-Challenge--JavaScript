@@ -139,9 +139,10 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 
 */
 const lowerCase = zooAnimals.map(function(x){
-  something = `${x.animal_name.toLowerCase}`
+  return x.animal_name.toLowerCase();
 })
 console.log(lowerCase)
+
 /* Request 3: .filter() 
 
 The zoos are concenred about animals with a lower population count. Find out which animals have a population less than 5.
