@@ -29,7 +29,7 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
-.map creates a new array & forEach() executes the function
+.map creates a new array and mutates it. forEach() executes the function
 
 2. What is the difference between a function and a method?
 A function takes one or more inputs and returns one or more outputs (values) and a method is used in oop (inside an object mostly)
@@ -41,7 +41,6 @@ closure is when the inner function has access to its parents scope.
     Must be called by new
     are we using call(), apply() or bind()
     is the function a method
-    i dont know what the last one is
 
 5. Why do we need super() in an extended class?
 super allows a child class to have access to the parents (the one we are extending off of)
